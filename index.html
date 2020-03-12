@@ -1,142 +1,173 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<center><h2>Sound Board</h2></center>
-<center>
-<table width="90%">
-	<tr>
-		<td colspan="5" style="text-align: center; font-size: x-large;">Drum
-		</td>
-	</tr>
-	<tr>
-		<td> <audio preload="auto" id="drum1">
-				<source src="http://naturaldrum.com/demos/kits/ns_wrock_stx.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('drum1').play()">Rock</button>
-		</td>
-		<td> <audio preload="auto" id="drum2">
-				<source src="http://naturaldrum.com/demos/kits/ns_rock_stx.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('drum2').play()">Bob</button>
-		</td>
-		<td> <audio preload="auto" id="drum3">
+<!DOCTYPE html>
+<html lang="en">
 
-				<source src="http://naturaldrum.com/demos/kits/ns_bop_stx.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('drum3').play()">Metal</button>
-		</td>
-		<td> <audio preload="auto" id="drum4">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		td {
+			height: 80px;
 
-				<source src="http://naturaldrum.com/demos/kits/ns_cyall_stx.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('drum4').play()">Cyall</button>
-		</td>
-		<td> <audio preload="auto" id="drum5">
+		}
 
-      <source src="http://naturaldrum.com/demos/kits/ns_jungle_stx.mp3" type="audio/mpeg">
+		button {
+			height: 100%;
+			padding: 25px;
+			;
+		}
+	</style>
+</head>
 
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('drum5').play()">Jungle</button>
-		</td>
-	</tr>
-	
-	<tr>
-		<td colspan="5" style="text-align: center; font-size: x-large;">Piano
-		</td>
-	</tr>
-	<tr>
-		<td> <audio preload="auto" id="p1">
-				<source src="https://freesound.org/data/previews/448/448578_9311684-lq.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p1').play()">A1</button>
-		</td>
-		<td> <audio preload="auto" id="p2">
-				<source src="https://freesound.org/data/previews/448/448563_9311684-lq.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p2').play()">A2</button>
-		</td>
-		<td> <audio preload="auto" id="p3">
+<body>
+	<div class="container">
+		<div class="text-center mt-3 mb-3">
+			<h2>Sound Board</h2>
+		</div>
 
-				<source src="https://freesound.org/data/previews/448/448562_9311684-lq.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p3').play()">A3</button>
-		</td>
-		<td> <audio preload="auto" id="p4">
-				<source src="https://freesound.org/data/previews/448/448561_9311684-lq.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p4').play()">A4</button>
-		</td>
-		<td> <audio preload="auto" id="p5">
+		<table width="100%" class="table table-dark">
+			<tr>
+				<td colspan="5" style="text-align: center; font-size: x-large;">Drum
+				</td>
+			</tr>
+			<tr>
+				<td> <audio preload="auto" id="drum1">
+						<source src="http://naturaldrum.com/demos/kits/ns_wrock_stx.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-primary"
+						onclick="document.getElementById('drum1').play()">Rock</button>
+				</td>
+				<td> <audio preload="auto" id="drum2">
+						<source src="http://naturaldrum.com/demos/kits/ns_rock_stx.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-light"
+						onclick="document.getElementById('drum2').play()">Bob</button>
+				</td>
+				<td> <audio preload="auto" id="drum3">
 
-				<source src="https://freesound.org/data/previews/448/448560_9311684-lq.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p5').play()">A5</button>
-				
-		</td>
-		
-	</tr>	
-	<tr>
-		<td colspan="5" style="text-align: center; font-size: x-large;">Animal
-		</td>
-	</tr>
-	<tr>
-		<td> <audio preload="auto" id="e1">
-				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Elefant.mp3?_=5"
-					type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('e1').play()">Elephant</button>
-		</td>
-		<td> <audio preload="auto" id="e2">
-				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/wolf.mp3?_=7"
-					type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('e2').play()">Wolf</button>
-		</td>
-		<td> <audio preload="auto" id="e3">
+						<source src="http://naturaldrum.com/demos/kits/ns_bop_stx.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-success"
+						onclick="document.getElementById('drum3').play()">Metal</button>
+				</td>
+				<td> <audio preload="auto" id="drum4">
 
-				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Tiger.mp3?_=14" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('e3').play()">Tiger</button>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="5" style="text-align: center; font-size: x-large;">Sound Effect
-		</td>
-	</tr>
-	<tr>
-		<td> <audio preload="auto" id="sound1">
-				<source src="https://staticcrate.com/content/audio-pro/soundscrate-slide-whistle-long-crescendo-1.mp3"
-					type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('sound1').play()">Whisple</button>
-		</td>
-		<td> <audio preload="auto" id="sound2">
-				<source src="https://staticcrate.com/content/audio-pro/soundscrate-kazoo-melody-phrase.mp3"
-					type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('sound2').play()">Kazoo</button>
-		</td>
-		<td> <audio preload="auto" id="sound3">
+						<source src="http://naturaldrum.com/demos/kits/ns_cyall_stx.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-warning"
+						onclick="document.getElementById('drum4').play()">Cyall</button>
+				</td>
+				<td> <audio preload="auto" id="drum5">
 
-				<source src="https://staticcrate.com/content/audio-pro/ambulance.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('sound3').play()">Ambulance</button>
-		</td>
-	</tr>
-</table>
-</center>
+						<source src="http://naturaldrum.com/demos/kits/ns_jungle_stx.mp3" type="audio/mpeg">
+
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-info"
+						onclick="document.getElementById('drum5').play()">Jungle</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="5" style="text-align: center; font-size: x-large;">Piano
+				</td>
+			</tr>
+			<tr>
+				<td> <audio preload="auto" id="p1">
+						<source src="https://freesound.org/data/previews/448/448578_9311684-lq.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-dark"
+						onclick="document.getElementById('p1').play()">A1</button>
+				</td>
+				<td> <audio preload="auto" id="p2">
+						<source src="https://freesound.org/data/previews/448/448563_9311684-lq.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-light"
+						onclick="document.getElementById('p2').play()">A2</button>
+				</td>
+				<td> <audio preload="auto" id="p3">
+
+						<source src="https://freesound.org/data/previews/448/448562_9311684-lq.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-info"
+						onclick="document.getElementById('p3').play()">A3</button>
+				</td>
+				<td> <audio preload="auto" id="p4">
+						<source src="https://freesound.org/data/previews/448/448561_9311684-lq.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-danger"
+						onclick="document.getElementById('p4').play()">A4</button>
+				</td>
+				<td> <audio preload="auto" id="p5">
+
+						<source src="https://freesound.org/data/previews/448/448560_9311684-lq.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-info"
+						onclick="document.getElementById('p5').play()">A5</button>
+
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan="5" style="text-align: center; font-size: x-large;">Animal
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"> <audio preload="auto" id="e1">
+						<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Elefant.mp3?_=5"
+							type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-success"
+						onclick="document.getElementById('e1').play()">Elephant</button>
+				</td>
+				<td> <audio preload="auto" id="e2">
+						<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/wolf.mp3?_=7"
+							type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-danger"
+						onclick="document.getElementById('e2').play()">Wolf</button>
+				</td>
+				<td colspan="2"> <audio preload="auto" id="e3">
+
+						<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Tiger.mp3?_=14"
+							type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-primary"
+						onclick="document.getElementById('e3').play()">Tiger</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5" style="text-align: center; font-size: x-large;">Sound Effect
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"> <audio preload="auto" id="sound1">
+						<source
+							src="https://staticcrate.com/content/audio-pro/soundscrate-slide-whistle-long-crescendo-1.mp3"
+							type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-warning"
+						onclick="document.getElementById('sound1').play()">Whisple</button>
+				</td>
+				<td> <audio preload="auto" id="sound2">
+						<source src="https://staticcrate.com/content/audio-pro/soundscrate-kazoo-melody-phrase.mp3"
+							type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-danger"
+						onclick="document.getElementById('sound2').play()">Kazoo</button>
+				</td>
+				<td colspan="2"> <audio preload="auto" id="sound3">
+
+						<source src="https://staticcrate.com/content/audio-pro/ambulance.mp3" type="audio/mpeg">
+					</audio>
+					<button type="button" class="btn btn-lg btn-block btn-warning"
+						onclick="document.getElementById('sound3').play()">Ambulance</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+</html>

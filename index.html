@@ -18,12 +18,13 @@
 			padding: 25px;
 			;
 		}
+		
 	</style>
 </head>
 
 <body>
 	<div class="container">
-		<div class="text-center mt-3 mb-3">
+		<div id="header" class="text-center mt-3 mb-3 w-100">
 			<h2>Sound Board</h2>
 		</div>
 
@@ -77,7 +78,7 @@
 				<td> <audio preload="auto" id="p1">
 						<source src="https://freesound.org/data/previews/448/448578_9311684-lq.mp3" type="audio/mpeg">
 					</audio>
-					<button type="button" class="btn btn-lg btn-block btn-dark"
+					<button type="button" class="btn btn-lg btn-block btn-warning"
 						onclick="document.getElementById('p1').play()">A1</button>
 				</td>
 				<td> <audio preload="auto" id="p2">

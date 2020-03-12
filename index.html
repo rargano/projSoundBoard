@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+<center><h2>Sound Board</h2></center>
+<center>
 <table width="90%">
 	<tr>
 		<td colspan="5" style="text-align: center; font-size: x-large;">Drum
@@ -36,10 +36,79 @@
 		</td>
 		<td> <audio preload="auto" id="drum5">
 
-				<source src="http://naturaldrum.com/demos/kits/ns_jungle_stx.mp3" 3" type="audio/mpeg">
+      <source src="http://naturaldrum.com/demos/kits/ns_jungle_stx.mp3" type="audio/mpeg">
+
 			</audio>
 			<button type="button" class="btn btn-lg btn-block"
 				onclick="document.getElementById('drum5').play()">Jungle</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="5" style="text-align: center; font-size: x-large;">Piano
+		</td>
+	</tr>
+	<tr>
+		<td> <audio preload="auto" id="p1">
+				<source src="https://freesound.org/data/previews/448/448578_9311684-lq.mp3" type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('p1').play()">A1</button>
+		</td>
+		<td> <audio preload="auto" id="p2">
+				<source src="https://freesound.org/data/previews/448/448563_9311684-lq.mp3" type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('p2').play()">A2</button>
+		</td>
+		<td> <audio preload="auto" id="p3">
+
+				<source src="https://freesound.org/data/previews/448/448562_9311684-lq.mp3" type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('p3').play()">A3</button>
+		</td>
+		<td> <audio preload="auto" id="p4">
+				<source src="https://freesound.org/data/previews/448/448561_9311684-lq.mp3" type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('p4').play()">A4</button>
+		</td>
+		<td> <audio preload="auto" id="p5">
+
+				<source src="https://freesound.org/data/previews/448/448560_9311684-lq.mp3" type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('p5').play()">A5</button>
+				
+		</td>
+		
+	</tr>	
+	<tr>
+		<td colspan="5" style="text-align: center; font-size: x-large;">Animal
+		</td>
+	</tr>
+	<tr>
+		<td> <audio preload="auto" id="e1">
+				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Elefant.mp3?_=5"
+					type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('e1').play()">Elephant</button>
+		</td>
+		<td> <audio preload="auto" id="e2">
+				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/wolf.mp3?_=7"
+					type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('e2').play()">Wolf</button>
+		</td>
+		<td> <audio preload="auto" id="e3">
+
+				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Tiger.mp3?_=14" type="audio/mpeg">
+			</audio>
+			<button type="button" class="btn btn-lg btn-block"
+				onclick="document.getElementById('e3').play()">Tiger</button>
 		</td>
 	</tr>
 	<tr>
@@ -69,70 +138,5 @@
 				onclick="document.getElementById('sound3').play()">Ambulance</button>
 		</td>
 	</tr>
-	<tr>
-		<td colspan="5" style="text-align: center; font-size: x-large;">Piano
-		</td>
-	</tr>
-	<tr>
-		<td> <audio preload="auto" id="p1">
-				<source src="http://www.vibrationdata.com/Kawai_fourth_A_D.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p1').play()">1</button>
-		</td>
-		<td> <audio preload="auto" id="p2">
-				<source src="http://www.tremblingsandwarblings.com/wp-content/uploads/2017/05/piano-Cs4-long.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p2').play()">2</button>
-		</td>
-		<td> <audio preload="auto" id="p3">
-
-				<source src="https://freesound.org/data/previews/316/316907_5385832-lq.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p3').play()">3</button>
-		</td>
-		<td> <audio preload="auto" id="p4">
-
-				<source src="http://www.vibrationdata.com/piano_C_sharp.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p4').play()">4</button>
-		</td>
-		<td> <audio preload="auto" id="p5">
-
-				<source src="http://www.vibrationdata.com/Kawai_Major_Sixth_A_F_sharp.mp3" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('p5').play()">5</button>
-		</td>
-	</tr>	
-	<tr>
-		<td colspan="5" style="text-align: center; font-size: x-large;">Animal
-		</td>
-	</tr>
-	<tr>
-		<td> <audio preload="auto" id="e1">
-				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Elefant.mp3?_=5"
-					type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('e1').play()">Elephant</button>
-		</td>
-		<td> <audio preload="auto" id="e2">
-				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/wolf.mp3?_=7"
-					type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('e2').play()">Wolf</button>
-		</td>
-		<td> <audio preload="auto" id="e3">
-
-				<source src="https://freeanimalsounds.org/wp-content/uploads/2017/07/Tiger.mp3?_=14" type="audio/mpeg">
-			</audio>
-			<button type="button" class="btn btn-lg btn-block"
-				onclick="document.getElementById('e3').play()">Tiger</button>
-		</td>
-	</tr>
 </table>
+</center>
